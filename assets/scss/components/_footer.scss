@@ -214,7 +214,7 @@ footer {
         .office-container {
             display: block;
             margin-bottom: 45px;
-            .col-xs-12 {
+            .col-12 {
                 @include media-xs {
                     margin-bottom: 30px;
                 }
@@ -263,7 +263,7 @@ footer {
             }
         }
         .footer-links {
-            .col-xs-12 {
+            .col-12 {
                 &:last-child {
                     a {
                         @include media-xs {

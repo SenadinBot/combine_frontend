@@ -377,3 +377,36 @@ p {
         height: auto;
     }
 }
+.visible-xs {
+    display: none !important;
+    @include media-xs {
+        display: block !important;
+    }
+}
+.hidden-xs {
+    @include media-xs {
+        display: none !important;
+    }
+}
+.hidden-sm {
+    @include media-sm {
+        display: none !important;
+    }
+}
+.hidden-md {
+    @include media-md {
+        display: none !important;
+    }
+}
+.hidden-lg {
+    @include media-lg {
+        display: none !important;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        @include media-xs {
+            max-width: initial;
+        }
+    }
+}
