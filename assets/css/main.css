@@ -965,6 +965,10 @@ body.menu-open {
 
 .intro-banner-content {
   padding-top: 134px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .intro-banner-content {
+      text-align: left;
+      padding-top: 80px; } }
   .intro-banner-content .custom-btn {
     min-width: 160px; }
   .intro-banner-content .intro-subtitle {

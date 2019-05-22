@@ -43,6 +43,10 @@
 
 .intro-banner-content {
     padding-top: 134px;
+    @include media-sm {
+        text-align: left;
+        padding-top: 80px;
+    }
     .custom-btn {
         min-width: 160px;
     }
