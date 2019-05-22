@@ -415,11 +415,11 @@ header {
       position: absolute;
       left: 0;
       bottom: 0; } }
-  header.white-header .logo-container .logo {
+  header.dark-bg .logo-container .logo {
     position: absolute;
     height: 0;
     visibility: hidden; }
-  header.white-header .logo-container .white-logo {
+  header.dark-bg .logo-container .white-logo {
     position: relative;
     height: auto;
     visibility: visible;
@@ -432,23 +432,23 @@ header {
     -moz-transition: -moz-transform 0.9s 0s, visibility 0.9s 0s;
     transition: transform 0.9s 0s, visibility 0.9s 0s; }
     @media (min-width: 768px) and (max-width: 991px) {
-      header.white-header .logo-container .white-logo {
+      header.dark-bg .logo-container .white-logo {
         display: inline-block; } }
-  header.white-header nav ul li a {
+  header.dark-bg nav ul li a {
     color: #ffffff; }
-    header.white-header nav ul li a:before {
+    header.dark-bg nav ul li a:before {
       background-color: #ffffff; }
-    header.white-header nav ul li a:hover {
+    header.dark-bg nav ul li a:hover {
       color: #ffffff; }
-    header.white-header nav ul li a.secondary-btn {
+    header.dark-bg nav ul li a.secondary-btn {
       border-color: #ffffff; }
-      header.white-header nav ul li a.secondary-btn:after {
+      header.dark-bg nav ul li a.secondary-btn:after {
         background: #ffffff; }
-      header.white-header nav ul li a.secondary-btn:hover {
+      header.dark-bg nav ul li a.secondary-btn:hover {
         color: #212137; }
-  header.white-header nav ul li.active a:before {
+  header.dark-bg nav ul li.active a:before {
     background-color: #ffffff; }
-  header.white-header .mobile-link {
+  header.dark-bg .mobile-link {
     color: #ffffff; }
   header .mobile-link {
     display: none; }
@@ -755,11 +755,11 @@ body.menu-open {
   @media (max-width: 767px) {
     body.menu-open header:after {
       top: 230px; } }
-  body.menu-open header.white-header .logo-container .logo.mobile-logo {
+  body.menu-open header.dark-bg .logo-container .logo.mobile-logo {
     position: relative;
     height: auto;
     visibility: visible; }
-  body.menu-open header.white-header .logo-container .white-logo {
+  body.menu-open header.dark-bg .logo-container .white-logo {
     position: absolute;
     height: 0;
     visibility: hidden;
@@ -778,21 +778,21 @@ body.menu-open {
     -webkit-transition: -webkit-transform 0.9s 0s, visibility 0s 0.9s;
     -moz-transition: -moz-transform 0.9s 0s, visibility 0s 0.9s;
     transition: transform 0.2s 0s, visibility 0s 0.2s; }
-  body.menu-open header.white-header nav ul li a {
+  body.menu-open header.dark-bg nav ul li a {
     color: #212137; }
-    body.menu-open header.white-header nav ul li a:before {
+    body.menu-open header.dark-bg nav ul li a:before {
       background-color: #212137; }
-    body.menu-open header.white-header nav ul li a:hover {
+    body.menu-open header.dark-bg nav ul li a:hover {
       color: #212137; }
-    body.menu-open header.white-header nav ul li a.secondary-btn {
+    body.menu-open header.dark-bg nav ul li a.secondary-btn {
       border-color: #ffffff; }
-      body.menu-open header.white-header nav ul li a.secondary-btn:after {
+      body.menu-open header.dark-bg nav ul li a.secondary-btn:after {
         background: #ffffff; }
-      body.menu-open header.white-header nav ul li a.secondary-btn:hover {
+      body.menu-open header.dark-bg nav ul li a.secondary-btn:hover {
         color: #212137; }
-  body.menu-open header.white-header nav ul li.active a:before {
+  body.menu-open header.dark-bg nav ul li.active a:before {
     background-color: #212137; }
-  body.menu-open header.white-header .mobile-link {
+  body.menu-open header.dark-bg .mobile-link {
     color: #212137; }
   @media (max-width: 767px) {
     body.menu-open header .logo-container {
@@ -962,6 +962,212 @@ body.menu-open {
     animation-name: fadeInUp; }
     .intro-banner-container.show .btn-container:after {
       margin-left: -192px; }
+
+.intro-banner-content {
+  padding-top: 134px; }
+  .intro-banner-content .custom-btn {
+    min-width: 160px; }
+  .intro-banner-content .intro-subtitle {
+    font-family: "Roboto Slab Light";
+    font-size: 24px;
+    line-height: 26px;
+    color: #212137;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+    display: block;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: fadeInLeft; }
+    @media (max-width: 767px) {
+      .intro-banner-content .intro-subtitle {
+        font-size: 20px; } }
+  .intro-banner-content h1 {
+    margin-bottom: 60px;
+    width: 88%;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: fadeInLeft; }
+    @media (max-width: 767px) {
+      .intro-banner-content h1 {
+        width: 100%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .intro-banner-content h1 {
+        width: 100%; } }
+    @media (max-width: 767px) {
+      .intro-banner-content h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px; } }
+  .intro-banner-content .btn-container {
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: fadeInUp; }
+    .intro-banner-content .btn-container:after {
+      margin-left: -192px; }
+  .intro-banner-content .text-intro .description {
+    font-family: "Roboto Slab Light";
+    font-size: 22px;
+    line-height: 28px;
+    color: #212137;
+    letter-spacing: 0;
+    width: 77%;
+    display: block;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: fadeInUp; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .intro-banner-content .text-intro .description {
+        width: 93%; } }
+    @media (max-width: 767px) {
+      .intro-banner-content .text-intro .description {
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center; } }
+  .intro-banner-content .contact-info {
+    margin-bottom: 43px;
+    display: inline-block; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .intro-banner-content .contact-info {
+        margin-bottom: 25px; } }
+    @media (max-width: 767px) {
+      .intro-banner-content .contact-info {
+        margin-bottom: 20px; } }
+    .intro-banner-content .contact-info a {
+      font-family: "Roboto Slab Light";
+      font-size: 32px;
+      line-height: 34px;
+      color: #212137;
+      letter-spacing: 0;
+      display: block;
+      margin-bottom: 70px; }
+      .intro-banner-content .contact-info a:hover {
+        text-decoration: none;
+        color: #212137; }
+      .intro-banner-content .contact-info a:focus {
+        outline: none; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .intro-banner-content .contact-info a {
+          margin-bottom: 30px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .intro-banner-content .contact-info a {
+          margin-bottom: 30px; } }
+      @media (max-width: 767px) {
+        .intro-banner-content .contact-info a {
+          margin-bottom: 10px;
+          font-size: 24px;
+          line-height: 30px; } }
+  .intro-banner-content .map-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: -200px; }
+    .intro-banner-content .map-container .map-content {
+      flex: 1 1 0%;
+      width: auto;
+      display: flex;
+      flex-flow: column nowrap; }
+      @media (max-width: 767px) {
+        .intro-banner-content .map-container .map-content {
+          flex: 1 1 100%; } }
+      .intro-banner-content .map-container .map-content:first-child {
+        margin-right: 30px; }
+        @media (max-width: 767px) {
+          .intro-banner-content .map-container .map-content:first-child {
+            margin-right: 0; } }
+      .intro-banner-content .map-container .map-content:last-child {
+        margin-right: 0; }
+  .intro-banner-content .map-content span {
+    font-family: "Roboto Slab Light";
+    font-size: 20px;
+    line-height: 26px;
+    color: #212137;
+    letter-spacing: 0;
+    display: block; }
+    .intro-banner-content .map-content span b {
+      font-family: "Roboto Slab"; }
+  .intro-banner-content .map-content .map-inner-content {
+    width: 100%;
+    height: 350px;
+    margin-top: 30px; }
+    @media (max-width: 767px) {
+      .intro-banner-content .map-content .map-inner-content {
+        height: 280px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .intro-banner-content .map-content .map-inner-content {
+        height: 280px; } }
+    .intro-banner-content .map-content .map-inner-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .intro-banner-content .intro-links-content {
+    margin-top: 105px;
+    display: inline-block;
+    width: 100%; }
+    .intro-banner-content .intro-links-content span {
+      font-family: "Roboto Slab Bold";
+      font-size: 16px;
+      line-height: 26px;
+      color: #C68E60;
+      letter-spacing: 0;
+      display: block;
+      margin-bottom: 16px; }
+      @media (max-width: 767px) {
+        .intro-banner-content .intro-links-content span {
+          margin-bottom: 10px; } }
+    .intro-banner-content .intro-links-content .horizontal-links {
+      list-style: none;
+      padding: 0; }
+      @media (max-width: 767px) {
+        .intro-banner-content .intro-links-content .horizontal-links {
+          margin-bottom: 20px; } }
+      .intro-banner-content .intro-links-content .horizontal-links li {
+        font-family: "Roboto Light";
+        font-size: 16px;
+        line-height: 28px;
+        color: #212137;
+        letter-spacing: 0; }
+
+.grey-bg {
+  background-color: #EAEAEA; }
+
+.dark-bg {
+  background-color: #2D3C48; }
+  .dark-bg .intro-banner-content .intro-subtitle {
+    color: #ffffff; }
+  .dark-bg .intro-banner-content h1 {
+    color: #ffffff; }
+  .dark-bg .intro-banner-content .intro-links-content .horizontal-links li {
+    color: #ffffff; }
+
+.extra-big-margin-bottom {
+  margin-bottom: 287px; }
+
+.big-margin-bottom {
+  margin-bottom: 233px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .big-margin-bottom {
+      margin-bottom: 145px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .big-margin-bottom {
+      margin-bottom: 105px; } }
+  @media (max-width: 767px) {
+    .big-margin-bottom {
+      margin-bottom: 85px; } }
+
+.big-padding-bottom {
+  padding-bottom: 212px; }
+  @media (max-width: 767px) {
+    .big-padding-bottom {
+      padding-bottom: 80px; } }
+
+.medium-margin-bottom {
+  margin-bottom: 93px; }
+  @media (max-width: 767px) {
+    .medium-margin-bottom {
+      margin-bottom: 60px; } }
+
+.small-margin-bottom {
+  margin-bottom: 61px; }
 
 .case-container {
   float: left;
@@ -2390,7 +2596,8 @@ footer {
   float: left;
   width: 100%;
   overflow-x: hidden;
-  margin-bottom: 138px; }
+  margin-bottom: 138px;
+  margin-top: -163px; }
   @media (min-width: 992px) and (max-width: 1199px) {
     .case-info-container {
       margin-bottom: 110px; } }

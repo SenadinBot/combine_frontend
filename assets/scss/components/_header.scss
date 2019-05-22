@@ -19,7 +19,7 @@ header {
             bottom: 0;
         } 
     }
-    &.white-header {
+    &.dark-bg {
         .logo-container {
             .logo {
                 position: absolute;
@@ -420,7 +420,7 @@ body {
                     top: 230px;
                 }
             }
-            &.white-header {
+            &.dark-bg {
                 .logo-container {
                     .logo {
                         &.mobile-logo {
