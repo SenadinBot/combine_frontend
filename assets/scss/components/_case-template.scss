@@ -112,8 +112,6 @@
     }
 }
 .case-info-container {
-    float: left;
-    width: 100%;
     overflow-x: hidden;
     margin-bottom: 138px;
     margin-top: -163px;
@@ -126,160 +124,158 @@
     @include media-xs {
         margin-bottom: 40px;
     }
-    .case-info-intro-image {
-        height: 939px;
-        position: relative;
-        // z-index: 9;
-        margin-bottom: 208px;
-        margin-right: -webkit-calc(100% + (-100vw - 1140px) / 2);
-        margin-right: calc(100% + (-100vw - 1140px) / 2);
+}
+.case-info-intro-image {
+    height: 939px;
+    position: relative;
+    // z-index: 9;
+    margin-bottom: 208px;
+    margin-right: -webkit-calc(100% + (-100vw - 1140px) / 2);
+    margin-right: calc(100% + (-100vw - 1140px) / 2);
+    @include media-sm {
+        height: 450px;
+        margin-bottom: 100px;
+    }
+    @include media-md {
+        height: 600px;
+        margin-bottom: 140px;
+    }
+    @include media-xs {
+        margin-right: -15px;
+        margin-bottom: 80px;
+        height: auto;
+    }
+    img {
+        max-height: 100%;
         @include media-sm {
-            height: 450px;
-            margin-bottom: 100px;
+            width: 100%;
         }
         @include media-md {
-            height: 600px;
-            margin-bottom: 140px;
+            width: 100%;
         }
         @include media-xs {
-            margin-right: -15px;
-            margin-bottom: 80px;
-            height: auto;
-        }
-        img {
-            max-height: 100%;
-            @include media-sm {
-                width: 100%;
-            }
-            @include media-md {
-                width: 100%;
-            }
-            @include media-xs {
-                width: 100%;
-            }
+            width: 100%;
         }
     }
-    .case-info-item {
-        margin-bottom: 60px;
-        &:last-child {
-            margin-top: 92px;
-            @include media-xs {
-                margin-top: 30px;
-            }
+}
+.case-info-item {
+    margin-bottom: 60px;
+    &:last-child {
+        margin-top: 92px;
+        @include media-xs {
+            margin-top: 30px;
         }
-        .case-info-title {
-            h4 {
-                color: $antiqueBrass;
-                font-family: $robotoSlabBold;
-                font-size: 16px;
-                line-height: 26px;
-                letter-spacing: 0;
-            }
+    }
+    .case-info-title {
+        h4 {
+            color: $antiqueBrass;
+            font-family: $robotoSlabBold;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0;
         }
-        .case-info-content {
-            width: 77%;
+    }
+    .case-info-content {
+        width: 77%;
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        @include media-md {
+            width: 94%;
+        }
+        h3 {
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: 0;
+            margin: -5px 0 27px 0;
+        }
+        p {
+            letter-spacing: 0;
+            margin-bottom: 25px;
+        }
+        .statistic-container {
+            margin-top: -18px;
             @include media-xs {
-                width: 100%;
+                margin-top: 0;
             }
-            @include media-sm {
-                width: 100%;
-            }
-            @include media-md {
-                width: 94%;
-            }
-            h3 {
-                font-size: 28px;
-                line-height: 40px;
-                letter-spacing: 0;
-                margin: -5px 0 27px 0;
-            }
-            p {
-                letter-spacing: 0;
-                margin-bottom: 25px;
-            }
-            .statistic-container {
-                margin-top: -18px;
+            span {
+                display: block;
+                text-align: left;
                 @include media-xs {
-                    margin-top: 0;
+                    text-align: center;
                 }
-                span {
-                    display: block;
-                    text-align: left;
-                    @include media-xs {
-                        text-align: center;
+                &.title {
+                    font-family: $robotoSlab;
+                    font-size: 60px;
+                    line-height: 60px;
+                    color: $antiqueBrass;
+                    letter-spacing: 0;
+                    @include media-sm {
+                        font-size: 46px;
+                        line-height: 46px;
                     }
-                    &.title {
-                        font-family: $robotoSlab;
-                        font-size: 60px;
-                        line-height: 60px;
-                        color: $antiqueBrass;
-                        letter-spacing: 0;
-                        @include media-sm {
-                            font-size: 46px;
-                            line-height: 46px;
-                        }
-                    }
-                    &.description {
-                        font-family: $robotoLight;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: $ebonyClay;
-                        letter-spacing: 0;
-                        margin-top: 20px;
-                        @include media-sm {
-                            margin-top: 10px;
-                        }
+                }
+                &.description {
+                    font-family: $robotoLight;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $ebonyClay;
+                    letter-spacing: 0;
+                    margin-top: 20px;
+                    @include media-sm {
+                        margin-top: 10px;
                     }
                 }
             }
         }
     }
-    .case-info-image {
-        // z-index: 9;
-        height: 588px;
-        position: relative;
-        margin: 179px 0 204px 0;
+}
+.case-info-image {
+    // z-index: 9;
+    height: 588px;
+    position: relative;
+    margin: 179px 0 204px 0;
+    margin-left: -webkit-calc(100% + (-100vw - 1140px) / 2);
+    margin-left: calc(100% + (-100vw - 1140px) / 2);
+    .jarallax-img {
+        object-fit: contain !important;
+        @include media-sm {
+            object-fit: cover !important;
+        }
+    }
+    @include media-sm {
+        height: 300px;
+        margin: 89px 0 114px 0;
+        margin-left: -30px;
+    }
+    @include media-md {
+        height: 400px;
+        margin: 119px 0 144px 0;
         margin-left: -webkit-calc(100% + (-100vw - 1140px) / 2);
         margin-left: calc(100% + (-100vw - 1140px) / 2);
-        .jarallax-img {
-            object-fit: contain !important;
-            @include media-sm {
-                object-fit: cover !important;
-            }
-        }
+    }
+    @include media-xs {
+        margin: 60px 0 40px -15px;
+        height: auto;
+    }
+    img {
+        max-height: 100%;
         @include media-sm {
-            height: 300px;
-            margin: 89px 0 114px 0;
-            margin-left: -30px;
+            width: 100%;
         }
         @include media-md {
-            height: 400px;
-            margin: 119px 0 144px 0;
-            margin-left: -webkit-calc(100% + (-100vw - 1140px) / 2);
-            margin-left: calc(100% + (-100vw - 1140px) / 2);
+            width: 100%;
         }
         @include media-xs {
-            margin: 60px 0 40px -15px;
-            height: auto;
-        }
-        img {
-            max-height: 100%;
-            @include media-sm {
-                width: 100%;
-            }
-            @include media-md {
-                width: 100%;
-            }
-            @include media-xs {
-                width: 100%;
-            }
+            width: 100%;
         }
     }
 }
 .full-background-image-container {
     height: 1106px;
-    float: left;
-    width: 100%;
     position: relative;
     overflow: hidden;
     margin-bottom: 200px;
@@ -304,8 +300,6 @@
 .case-steps-container {
     margin-bottom: 80px;
     overflow: hidden;
-    float: left;
-    width: 100%;
     @include media-md {
         margin-bottom: 60px;
     }
@@ -315,90 +309,90 @@
     @include media-xs {
         margin-bottom: 40px;
     }
-    .case-steps-item {
-        min-height: 380px;
-        margin-bottom: 120px;
-        @include media-sm {
-            margin-bottom: 70px;
-            min-height: 300px;
-        }
-        @include media-md {
-            margin-bottom: 90px;
-            min-height: 313px;
-        }
+}
+.case-steps-item {
+    min-height: 380px;
+    margin-bottom: 120px;
+    @include media-sm {
+        margin-bottom: 70px;
+        min-height: 300px;
+    }
+    @include media-md {
+        margin-bottom: 90px;
+        min-height: 313px;
+    }
+    @include media-xs {
+        margin-bottom: 70px;
+        text-align: center;
+        min-height: auto;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    .img-container {
+        float: left;
+        width: 50%;
         @include media-xs {
-            margin-bottom: 70px;
-            text-align: center;
-            min-height: auto;
-            display: block;
-            float: left;
             width: 100%;
         }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+    .case-steps-content {
+        float: left;
+        width: 50%;
+        padding-top: 29px;
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-sm {
+            padding-top: 0;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        span {
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 26px;
+        }
+    }
+    &:nth-child(odd) {
         .img-container {
             float: left;
-            width: 50%;
+        }
+        .case-steps-content {
+            padding-left: 110px;
+            float: right;
             @include media-xs {
-                width: 100%;
+                padding-left: 0;
             }
-            img {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: contain;
+            @include media-sm {
+                padding-left: 40px;
             }
+            @include media-md {
+                padding-left: 70px;
+            }
+        }
+    }
+    &:nth-child(even) {
+        .img-container {
+            float: right;
         }
         .case-steps-content {
             float: left;
-            width: 50%;
-            padding-top: 29px;
+            padding-right: 110px;
             @include media-xs {
-                width: 100%;
+                padding-right: 0;
             }
             @include media-sm {
-                padding-top: 0;
+                padding-right: 40px;
             }
-            h3 {
-                font-size: 28px;
-            }
-            span {
-                font-size: 18px;
-                letter-spacing: 0;
-                line-height: 26px;
-            }
-        }
-        &:nth-child(odd) {
-            .img-container {
-                float: left;
-            }
-            .case-steps-content {
-                padding-left: 110px;
-                float: right;
-                @include media-xs {
-                    padding-left: 0;
-                }
-                @include media-sm {
-                    padding-left: 40px;
-                }
-                @include media-md {
-                    padding-left: 70px;
-                }
-            }
-        }
-        &:nth-child(even) {
-            .img-container {
-                float: right;
-            }
-            .case-steps-content {
-                float: left;
-                padding-right: 110px;
-                @include media-xs {
-                    padding-right: 0;
-                }
-                @include media-sm {
-                    padding-right: 40px;
-                }
-                @include media-md {
-                    padding-right: 70px;
-                }
+            @include media-md {
+                padding-right: 70px;
             }
         }
     }
@@ -406,8 +400,6 @@
 .quote-container {
     margin-bottom: 200px;
     overflow: hidden;
-    float: left;
-    width: 100%;
     @include media-md {
         margin-bottom: 140px;
     }
@@ -417,79 +409,77 @@
     @include media-xs {
         margin-bottom: 40px;
     }
-    .quote-content {
-        padding-left: 299px;
-        position: relative;
-        @include media-xs {
-            padding-left: 0;
-        }
+}
+.quote-content {
+    padding-left: 299px;
+    position: relative;
+    @include media-xs {
+        padding-left: 0;
+    }
+    @include media-sm {
+        padding-left: 100px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 110px;
+        width: 64px;
+        height: 56px;
+        background-image: url("../../../assets/images/quote-right-solid-2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         @include media-sm {
-            padding-left: 100px;
+            left: 0;
         }
-        &:before {
-            content: "";
-            position: absolute;
-            top: -5px;
-            left: 110px;
-            width: 64px;
-            height: 56px;
-            background-image: url("../../../assets/images/quote-right-solid-2.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            @include media-sm {
-                left: 0;
-            }
-            @include media-xs {
-                display: block;
-                text-align: center;
-                margin: 0 auto 40px auto;
-                left: 0;
-                position: relative;
-            }
-        }
-        h3 {
-            font-family: $robotoSlabLight;
-            font-size: 28px;
-            line-height: 40px;
-            color: $ebonyClay;
-            letter-spacing: 0;
-            margin-bottom: 60px;
-            @include media-sm {
-                font-size: 22px;
-                line-height: 30px;
-            }
-            @include media-xs {
-                font-size: 22px;
-                line-height: 30px;
-                text-align: center;
-            }
-        }
-        span {
+        @include media-xs {
             display: block;
             text-align: center;
-            margin: 0 auto;
-            &.quote-title {
-                font-family: $robotoSlabBold;
-                font-size: 20px;
-                line-height: 26px;
-                color: $antiqueBrass;
-                letter-spacing: 0.8px;
-                margin-bottom: 5px;
-            }
-            &.quote-position {
-                font-family: $robotoSlab;
-                font-size: 16px;
-                line-height: 26px;
-                color: $ebonyClay;
-                letter-spacing: 0.5px;
-            }
+            margin: 0 auto 40px auto;
+            left: 0;
+            position: relative;
+        }
+    }
+    h3 {
+        font-family: $robotoSlabLight;
+        font-size: 28px;
+        line-height: 40px;
+        color: $ebonyClay;
+        letter-spacing: 0;
+        margin-bottom: 60px;
+        @include media-sm {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @include media-xs {
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    span {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        &.quote-title {
+            font-family: $robotoSlabBold;
+            font-size: 20px;
+            line-height: 26px;
+            color: $antiqueBrass;
+            letter-spacing: 0.8px;
+            margin-bottom: 5px;
+        }
+        &.quote-position {
+            font-family: $robotoSlab;
+            font-size: 16px;
+            line-height: 26px;
+            color: $ebonyClay;
+            letter-spacing: 0.5px;
         }
     }
 }
 .case-contact-person-container {
     // position: relative;
-    float: left;
-    width: 100%;
     overflow: hidden;
     margin-bottom: 200px;
     @include media-md {
@@ -502,122 +492,120 @@
         margin-bottom: 40px;
         background-color: #EAEAEA;
     }
-    .contact-person-content {
-        background: #EAEAEA;
-        padding: 90px 0 77px 110px;
-        margin-right: -100%;
-        padding-right: 100%;
-        position: relative;
+}
+.contact-person-content {
+    background: #EAEAEA;
+    padding: 90px 0 77px 110px;
+    margin-right: -100%;
+    padding-right: 100%;
+    position: relative;
+    @include media-sm {
+        padding: 90px 0 77px 80px;
+    }
+    @include media-xs {
+        padding: 70px 15px 50px 15px;
+        margin-right: -15px;
+    }
+    h3 {
+        width: 60%;
+        margin-bottom: 98px;
         @include media-sm {
-            padding: 90px 0 77px 80px;
+            width: 28%;
         }
         @include media-xs {
-            padding: 70px 15px 50px 15px;
-            margin-right: -15px;
+            width: 100%;
+            margin-bottom: 40px;
+            padding-right: 30px;
         }
-        h3 {
-            width: 60%;
-            margin-bottom: 98px;
-            @include media-sm {
-                width: 28%;
-            }
-            @include media-xs {
-                width: 100%;
-                margin-bottom: 40px;
-                padding-right: 30px;
+    }
+    a {
+        font-family: $robotoSlabLight;
+        color: $ebonyClay;
+        position: relative;
+        display: table;
+        margin-bottom: 19px;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: 46px;
+        @include media-sm {
+            font-size: 24px;
+            line-height: 44px;
+            margin-bottom: 0;
+        }
+        @include media-md {
+            font-size: 24pt;
+            line-height: 50px;
+            margin-bottom: 0;
+        }
+        @include media-xs {
+            font-size: 16pt;
+            line-height: 30pt;
+            margin-bottom: 5px;
+        }
+        &:nth-child(2) {
+            &:after {
+                display: none;
             }
         }
-        a {
-            font-family: $robotoSlabLight;
-            color: $ebonyClay;
-            position: relative;
-            display: table;
-            margin-bottom: 19px;
-            font-size: 32px;
-            letter-spacing: 0;
-            line-height: 46px;
-            @include media-sm {
-                font-size: 24px;
-                line-height: 44px;
-                margin-bottom: 0;
-            }
-            @include media-md {
-                font-size: 24pt;
-                line-height: 50px;
-                margin-bottom: 0;
-            }
-            @include media-xs {
-                font-size: 16pt;
-                line-height: 30pt;
-                margin-bottom: 5px;
-            }
-            &:nth-child(2) {
-                &:after {
-                    display: none;
-                }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: $ebonyClay;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: $ebonyClay;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            -o-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &:hover {
+            text-decoration: none;
+            &:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
             }
             &:after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 1px;
-                bottom: 0;
-                left: 0;
-                background-color: $ebonyClay;
-            }
-            &:before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 1px;
-                bottom: 0;
-                left: 0;
-                background-color: $ebonyClay;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                -moz-transform: scaleX(0);
-                -ms-transform: scaleX(0);
-                -o-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all 0.3s ease-in-out 0s;
-                -moz-transition: all 0.3s ease-in-out 0s;
-                -ms-transition: all 0.3s ease-in-out 0s;
-                -o-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s ease-in-out 0s;
-            }
-            &:hover {
-                text-decoration: none;
-                &:before {
-                    visibility: visible;
-                    -webkit-transform: scaleX(1);
-                    transform: scaleX(1);
-                }
-                &:after {
-                    display: none;
-                }
+                display: none;
             }
         }
     }
-    .img-container {
-        position: absolute;
-        right: 30px;
-        bottom: 0;
-        @include media-xs {
-            position: relative;
-            right: 0;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
+}
+.contact-person-img-container {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    @include media-xs {
+        position: relative;
+        right: 0;
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 .other-case-container {
     margin-bottom: 200px;
     overflow: hidden;
-    float: left;
-    width: 100%;
     @include media-md {
         margin-bottom: 140px;
     }

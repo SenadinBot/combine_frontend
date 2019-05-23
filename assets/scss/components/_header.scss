@@ -16,7 +16,7 @@ header {
             height: 1px;
             position: absolute;
             left: 0;
-            bottom: 0;
+            top: 105px;
         } 
     }
     &.dark-bg {
@@ -408,7 +408,7 @@ body {
             @include media-xs {
                 padding: 55px 0 25px 30px;
                 background-color: $white;
-                z-index: 9;
+                z-index: 999;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -582,6 +582,9 @@ body {
                     transition: transform 0.9s 0s, visibility 0.9s 0s;
                 }
             }
+        }
+        .intro-banner-content {
+            opacity: 0;
         }
     }
 }

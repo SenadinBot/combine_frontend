@@ -146,162 +146,6 @@
             }
         }
     }
-    .person-item {
-        margin-bottom: 59px;
-        @include media-xs {
-            margin-bottom: 40px;
-        }
-        @include media-sm {
-            height: 297.5px;
-        }
-        img {
-            height: 255px;
-            width: 100%;
-            margin-bottom: 15px;
-            @include media-md {
-                height: 212.5px;
-            }
-            @include media-sm {
-                height: 157.5px;
-            }
-            @include media-xs {
-                height: auto;
-            }
-        }
-        span {
-            &.name {
-                display: block;
-                font-family: $robotoSlab;
-                font-size: 16px;
-                line-height: 26px;
-                color: $ebonyClay;
-                letter-spacing: 0;
-                margin-bottom: 9px;
-                @include media-sm {
-                    line-height: 20px;
-                }
-                @include media-xs {
-                    font-size: 22px;
-                    line-height: 30px;
-                }
-            }
-            &.position {
-                display: block;   
-                font-family: $robotoSlabLight;
-                font-size: 12px;
-                line-height: 20px;             
-                color: $ebonyClay;
-                letter-spacing: 0;
-                @include media-xs {
-                    font-size: 18px;
-                    line-height: 26px;
-                }
-            }
-        }
-        a {
-            display: block;
-            font-family: $robotoSlabLight;
-            font-size: 12px;
-            line-height: 20px;             
-            color: $ebonyClay;
-            letter-spacing: 0;
-            &:hover {
-                text-decoration: none;
-                color: $ebonyClay;
-            }
-            &:focus {
-                outline: none;
-            }
-            @include media-xs {
-                font-size: 18px;
-                line-height: 26px;
-            }
-        }
-    }
-    .job-find-content {
-        height: 255px;
-        border: 1px solid #D3D3D8;
-        border-right: none;
-        position: relative;
-        margin-bottom: 169px;
-        padding-left: 95px;
-        @include media-xs {
-            padding-left: 20px;
-            margin-bottom: 40px;
-        }
-        @include media-md {
-            height: 212.5px;
-        }
-        @include media-sm {
-            height: 157.5px;
-            padding-left: 20px;
-            margin-bottom: 200px;
-        }
-        &:after {
-            content: "";
-            background: #D3D3D8;
-            height: 1px;
-            width: 100%;
-            position: absolute;
-            right: -100%;
-            top: -1px;
-        }
-        &:before {
-            content: "";
-            background: #D3D3D8;
-            height: 1px;
-            width: 100%;
-            position: absolute;
-            right: -100%;
-            bottom: -1px;
-        }
-        .inner-job-find-content {
-            position: relative;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-        span {
-            font-family: $robotoSlab;
-            font-size: 20px;
-            line-height: 20px;
-            color: $antiqueBrass;
-            letter-spacing: 0;
-            margin-bottom: 18px;
-            display: block;
-            @include media-sm {
-                margin-bottom: 10px;
-                font-size: 18px;
-                line-height: 18px;
-            }
-        }
-        p {
-            font-family: $robotoSlabLight;
-            font-size: 16px;
-            color: $ebonyClay;
-            letter-spacing: 0;
-            display: block;
-            width: 79%;
-            margin-bottom: 28px;
-            @include media-xs {
-                width: 100%;
-            }
-            @include media-sm {
-                width: 100%;
-                margin-bottom: 18px;
-                font-size: 14px;
-                line-height: 18px;
-            }
-        }
-        .secondary-btn {
-            @include media-sm {
-                padding: 8px 20px;
-            }
-        }
-    }
     .aos-init {
         &:nth-child(even) {
             @include media-xs {
@@ -314,6 +158,162 @@
                 -webkit-transform: translate3d(-100px,0,0);
                 transform: translate3d(-100px,0,0);
             }
+        }
+    }
+}
+.person-item {
+    margin-bottom: 59px;
+    @include media-xs {
+        margin-bottom: 40px;
+    }
+    @include media-sm {
+        height: 297.5px;
+    }
+    img {
+        height: 255px;
+        width: 100%;
+        margin-bottom: 15px;
+        @include media-md {
+            height: 212.5px;
+        }
+        @include media-sm {
+            height: 157.5px;
+        }
+        @include media-xs {
+            height: auto;
+        }
+    }
+    span {
+        &.name {
+            display: block;
+            font-family: $robotoSlab;
+            font-size: 16px;
+            line-height: 26px;
+            color: $ebonyClay;
+            letter-spacing: 0;
+            margin-bottom: 9px;
+            @include media-sm {
+                line-height: 20px;
+            }
+            @include media-xs {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        &.position {
+            display: block;   
+            font-family: $robotoSlabLight;
+            font-size: 12px;
+            line-height: 20px;             
+            color: $ebonyClay;
+            letter-spacing: 0;
+            @include media-xs {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    a {
+        display: block;
+        font-family: $robotoSlabLight;
+        font-size: 12px;
+        line-height: 20px;             
+        color: $ebonyClay;
+        letter-spacing: 0;
+        &:hover {
+            text-decoration: none;
+            color: $ebonyClay;
+        }
+        &:focus {
+            outline: none;
+        }
+        @include media-xs {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+.job-find-content {
+    height: 255px;
+    border: 1px solid #D3D3D8;
+    border-right: none;
+    position: relative;
+    margin-bottom: 169px;
+    padding-left: 95px;
+    @include media-xs {
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+    @include media-md {
+        height: 212.5px;
+    }
+    @include media-sm {
+        height: 157.5px;
+        padding-left: 20px;
+        margin-bottom: 200px;
+    }
+    &:after {
+        content: "";
+        background: #D3D3D8;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        right: -100%;
+        top: -1px;
+    }
+    &:before {
+        content: "";
+        background: #D3D3D8;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        right: -100%;
+        bottom: -1px;
+    }
+    .inner-job-find-content {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    span {
+        font-family: $robotoSlab;
+        font-size: 20px;
+        line-height: 20px;
+        color: $antiqueBrass;
+        letter-spacing: 0;
+        margin-bottom: 18px;
+        display: block;
+        @include media-sm {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    p {
+        font-family: $robotoSlabLight;
+        font-size: 16px;
+        color: $ebonyClay;
+        letter-spacing: 0;
+        display: block;
+        width: 79%;
+        margin-bottom: 28px;
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-sm {
+            width: 100%;
+            margin-bottom: 18px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    .secondary-btn {
+        @include media-sm {
+            padding: 8px 20px;
         }
     }
 }
