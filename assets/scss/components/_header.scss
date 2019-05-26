@@ -383,6 +383,7 @@ header {
     }
 }
 body {
+    overflow-x: hidden;
     &.menu-open {
         overflow: hidden;
         .mobile-menu {

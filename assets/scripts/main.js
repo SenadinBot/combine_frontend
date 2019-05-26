@@ -37,4 +37,18 @@ $(document).ready(function () {
         }
     });
 
+    // Remove Cookie
+    $('.cookies-container .primary-btn').on('click', function() {
+        $('.cookies-container').slideUp();
+    });
+
+    // Brand Image Carousel
+    $('.brand-image .jarallax-img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+    });
 });

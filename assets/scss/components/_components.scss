@@ -2,7 +2,6 @@
     position: relative;
     margin: 0 0 140px 0;
     overflow: hidden;
-    padding-top: 70px;
     @include media-sm {
         margin-bottom: 80px;
     }
@@ -25,10 +24,13 @@
     width: 568px;
     z-index: 9999;
     position: relative;
+    margin-top: 70px;
     @include media-xs {
         width: 100%;
         border: none;
+        margin: 0;
         padding: 0;
+        text-align: left;
     }
     h1 {
         color: $antiqueBrass;
@@ -89,7 +91,7 @@
     height: 527px;
     position: absolute;
     right: 15px;
-    top: -69px;
+    top: 0;
     z-index: -9;
     @include media-xs {
         width: 110%;
@@ -176,7 +178,7 @@
         @include media-xs {
             font-size: 32px;
             line-height: 44px;
-            text-align: center;
+            text-align: left;
         }
     }
     span {
@@ -186,7 +188,7 @@
         text-align: left;
         width: 75%;
         @include media-xs {
-            text-align: center;
+            text-align: left;
             width: 100%;
             font-size: 18px;
             line-height: 28px;
@@ -330,7 +332,7 @@
         display: block;
         @include media-xs {
             width: 100%;
-            text-align: center;
+            text-align: left;
         }
         @include media-sm {
             width: 88%;

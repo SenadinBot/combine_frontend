@@ -89,7 +89,7 @@
         <button class="mobile-menu visible-xs" type="button" aria-label="toggle menu">
             <span aria-hidden="true"></span>
         </button>
-        <div class="case-info-container">
+        <div class="add-medium-margin-top add-medium-margin-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -147,9 +147,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="case-info-image">
-                            <div class="jarallax">
-                                <img class="jarallax-img" src="./assets/images/case_two_big.png" alt="Case Intro Image">
+                            <!-- If right side has just 2 image use class two-images, if right side has 3 images use class three-images, and if there is just one image on right side we don't use special class -->
+                        <div class="case-info-image three-images">
+                            <div class="left-side">
+                                <img src="./assets/images/1.png" alt="">
+                            </div>
+                            <div class="right-side">
+                                <img src="./assets/images/3.png" alt="">
+                                <img src="./assets/images/3.png" alt="">
+                                <img src="./assets/images/3.png" alt="">
                             </div>
                         </div>
                         <div class="case-info-item" data-aos="fade-left">
@@ -215,12 +221,12 @@
                 </div>
             </div>
         </div>
-        <div class="full-background-image-container">
+        <div class="full-background-image-container add-big-margin-bottom">
             <div class="jarallax">
                 <img class="jarallax-img" src="./assets/images/case_three_big.png" alt="Background Image">
             </div>
         </div>
-        <div class="case-steps-container">
+        <div class="add-small-margin-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -264,7 +270,7 @@
                 </div>
             </div>
         </div>
-        <div class="quote-container" data-aos="fade-right">
+        <div class="add-big-margin-bottom" data-aos="fade-right">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -280,7 +286,7 @@
                 </div>
             </div>
         </div>
-        <div class="case-contact-person-container" data-aos="fade-right">
+        <div class="add-big-margin-bottom" data-aos="fade-right">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -297,7 +303,7 @@
                 </div>
             </div>
         </div>
-        <div class="other-case-container">
+        <div class="other-case-container add-big-margin-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -442,6 +448,7 @@
     <script type="text/javascript" src="assets/scripts/jarallax.min.js"></script>
     <script type="text/javascript" src="assets/scripts/jarallax-element.min.js"></script>
     <script type="text/javascript" src="assets/scripts/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/slick.min.js"></script>
     <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>
 

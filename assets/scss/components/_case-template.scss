@@ -240,6 +240,95 @@
     margin: 179px 0 204px 0;
     margin-left: -webkit-calc(100% + (-100vw - 1140px) / 2);
     margin-left: calc(100% + (-100vw - 1140px) / 2);
+    font-size: 0;
+    .left-side {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        vertical-align: top;
+        @include media-xs {
+            width: 100%;
+        }
+    }
+    .right-side {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        vertical-align: top;
+        @include media-xs {
+            width: 100%;
+        }
+    }
+    &.two-images {
+        .right-side {
+            img {
+                height: 348px;
+                @include media-sm {
+                    height: 180px;
+                }
+                @include media-md {
+                    height: 240px;
+                }
+                @include media-xs {
+                    height: auto;                    
+                }
+                &:last-child {
+                    height: 240px;
+                    @include media-sm {
+                        height: 120px;
+                    }
+                    @include media-md {
+                        height: 160px;
+                    }
+                    @include media-xs {
+                        height: auto;                        
+                    }
+                }
+            }
+        }
+    }
+    &.three-images {
+        .right-side {
+            img {
+                height: 348px;
+                @include media-sm {
+                    height: 180px;
+                }
+                @include media-md {
+                    height: 240px;
+                }
+                @include media-xs {
+                    height: 200px;                    
+                }
+                &:nth-last-child(2) {
+                    height: 240px;
+                    width: 50%;
+                    @include media-sm {
+                        height: 120px;
+                    }
+                    @include media-md {
+                        height: 160px;
+                    }
+                    @include media-xs {
+                        max-height: auto;                    
+                    }
+                }
+                &:last-child {
+                    height: 240px;
+                    width: 50%;
+                    @include media-sm {
+                        height: 120px;
+                    }
+                    @include media-md {
+                        height: 160px;
+                    }
+                    @include media-xs {
+                        max-height: auto;
+                    }
+                }
+            }
+        }
+    }
     .jarallax-img {
         object-fit: contain !important;
         @include media-sm {
@@ -254,42 +343,31 @@
     @include media-md {
         height: 400px;
         margin: 119px 0 144px 0;
-        margin-left: -webkit-calc(100% + (-100vw - 1140px) / 2);
-        margin-left: calc(100% + (-100vw - 1140px) / 2);
+        margin-left: -30px;
     }
     @include media-xs {
         margin: 60px 0 40px -15px;
         height: auto;
     }
     img {
+        height: 100%;
         max-height: 100%;
-        @include media-sm {
-            width: 100%;
-        }
-        @include media-md {
-            width: 100%;
-        }
-        @include media-xs {
-            width: 100%;
-        }
+        width: 100%;
+        vertical-align: top;
     }
 }
 .full-background-image-container {
     height: 1106px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 200px;
     @include media-md {
         height: 600px;
-        margin-bottom: 100px;
     }
     @include media-sm {
         height: 450px;
-        margin-bottom: 80px;
     }
     @include media-xs {
         height: auto;
-        margin-bottom: 80px;
     }
     img {
         @include media-xs {
@@ -347,6 +425,7 @@
         padding-top: 29px;
         @include media-xs {
             width: 100%;
+            text-align: left;
         }
         @include media-sm {
             padding-top: 0;
@@ -604,17 +683,6 @@
     }
 }
 .other-case-container {
-    margin-bottom: 200px;
-    overflow: hidden;
-    @include media-md {
-        margin-bottom: 140px;
-    }
-    @include media-sm {
-        margin-bottom: 100px;
-    }
-    @include media-xs {
-        margin-bottom: 40px;
-    }
     h1 {
         margin-left: 16px;
         margin-bottom: 87px;

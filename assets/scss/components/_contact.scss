@@ -111,12 +111,7 @@
         }
     }
 }
-.contact-persons-container {
-    margin-bottom: 115px;
-    overflow: hidden;
-    @include media-xs {
-        margin-bottom: 40px;
-    }
+.contact-persons-intro{
     span {
         &.title {
             font-family: $robotoSlab;
@@ -143,20 +138,6 @@
             @include media-xs {
                 width: 100%;
                 margin-bottom: 30px;
-            }
-        }
-    }
-    .aos-init {
-        &:nth-child(even) {
-            @include media-xs {
-                -webkit-transform: translate3d(100px,0,0);
-                transform: translate3d(100px,0,0);
-            }
-        }
-        &:nth-child(odd) {
-            @include media-xs {
-                -webkit-transform: translate3d(-100px,0,0);
-                transform: translate3d(-100px,0,0);
             }
         }
     }

@@ -410,3 +410,36 @@ p {
         }
     }
 }
+.add-big-margin-bottom {
+    margin-bottom: 195px;
+    @include media-sm {
+        margin-bottom: 80px;
+    }
+    @include media-md {
+        margin-bottom: 90px;
+    }
+    @include media-xs {
+        margin-bottom: 80px;
+    }
+}
+.add-medium-margin-bottom  {
+    margin-bottom: 145px;
+    @include media-sm {
+        margin-bottom: 80px;
+    }
+    @include media-md {
+        margin-bottom: 90px;
+    }
+    @include media-xs {
+        margin-bottom: 90px;
+    }
+}
+.add-small-margin-bottom  {
+    margin-bottom: 115px;
+    @include media-xs {
+        margin-bottom: 40px;
+    }
+}
+.add-medium-margin-top {
+    margin-top: -163px;
+}
