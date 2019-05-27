@@ -410,36 +410,92 @@ p {
         }
     }
 }
-.add-big-margin-bottom {
-    margin-bottom: 195px;
+.padding-one {
+    padding: 72.5px 0;
+    @include media-xs {
+        padding: 40px 0;
+    }
     @include media-sm {
-        margin-bottom: 80px;
+        padding: 36.5px 0;
     }
     @include media-md {
-        margin-bottom: 90px;
-    }
-    @include media-xs {
-        margin-bottom: 80px;
+        padding: 46.5px 0;
     }
 }
-.add-medium-margin-bottom  {
-    margin-bottom: 145px;
+.padding-two {
+    padding: 72.5px 0 145px 0;
+    @include media-xs {
+        padding: 36.5px 0 72.5px 0;
+    }
     @include media-sm {
-        margin-bottom: 80px;
+        padding: 36.5px 0 72.5px 0;
     }
     @include media-md {
-        margin-bottom: 90px;
-    }
-    @include media-xs {
-        margin-bottom: 90px;
+        padding: 46.5px 0 82.5px 0;
     }
 }
-.add-small-margin-bottom  {
-    margin-bottom: 115px;
+.padding-three {
+    padding: 100px 0 72.5px 0;
+    @include media-xs {
+        padding: 50px 0 36.5px 0;
+    }
+    @include media-sm {
+        padding: 50px 0 36.5px 0;
+    }
+    @include media-md {
+        padding: 60px 0 46.5px 0;
+    }
+}
+.padding-four {
+    padding: 100px 0 145px 0;
+    @include media-xs {
+        padding: 50px 0 72.5px 0;
+    }
+    @include media-sm {
+        padding: 50px 0 72.5px 0;
+    }
+    @include media-md {
+        padding: 60px 0 82.5px 0;
+    }
+}
+.margin-one {
+    margin-bottom: 122.5px;
+    @include media-md {
+        margin-bottom: 50px;
+    }
+    @include media-sm {
+        margin-bottom: 40px;
+    }
     @include media-xs {
         margin-bottom: 40px;
     }
 }
-.add-medium-margin-top {
-    margin-top: -163px;
+.margin-two {
+    margin: -163px 0 122.5px 0;
+    @include media-xs {
+        margin: -81.5px 0 61.5px 0;
+    }
+    @include media-sm {
+        margin: -81.5px 0 61.5px 0;
+    }
+    @include media-md {
+        margin: -91.5px 0 71.5px 0;
+    }
+}
+.margin-three {
+    margin: 72.5px 0;  
+    @include media-xs {
+        margin: 40px 0;
+    }
+    @include media-sm {
+        margin: 36.5px 0;
+    }
+    @include media-md {
+        margin: 46.5px 0;
+    }
+}
+.remove-bottom-padding {
+    @include media-xs {
+        padding-bottom: 0;
+    }
 }

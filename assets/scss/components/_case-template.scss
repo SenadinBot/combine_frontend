@@ -475,6 +475,9 @@
             }
         }
     }
+    &:last-child {
+        margin: 0;
+    }
 }
 .quote-container {
     margin-bottom: 200px;

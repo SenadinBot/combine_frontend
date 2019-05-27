@@ -368,38 +368,93 @@ p {
   .container {
     max-width: initial; } }
 
-.add-big-margin-bottom {
-  margin-bottom: 195px; }
+.padding-one {
+  padding: 72.5px 0; }
+  @media (max-width: 767px) {
+    .padding-one {
+      padding: 40px 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .add-big-margin-bottom {
-      margin-bottom: 80px; } }
+    .padding-one {
+      padding: 36.5px 0; } }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .add-big-margin-bottom {
-      margin-bottom: 90px; } }
-  @media (max-width: 767px) {
-    .add-big-margin-bottom {
-      margin-bottom: 80px; } }
+    .padding-one {
+      padding: 46.5px 0; } }
 
-.add-medium-margin-bottom {
-  margin-bottom: 145px; }
+.padding-two {
+  padding: 72.5px 0 145px 0; }
+  @media (max-width: 767px) {
+    .padding-two {
+      padding: 36.5px 0 72.5px 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .add-medium-margin-bottom {
-      margin-bottom: 80px; } }
+    .padding-two {
+      padding: 36.5px 0 72.5px 0; } }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .add-medium-margin-bottom {
-      margin-bottom: 90px; } }
-  @media (max-width: 767px) {
-    .add-medium-margin-bottom {
-      margin-bottom: 90px; } }
+    .padding-two {
+      padding: 46.5px 0 82.5px 0; } }
 
-.add-small-margin-bottom {
-  margin-bottom: 115px; }
+.padding-three {
+  padding: 100px 0 72.5px 0; }
   @media (max-width: 767px) {
-    .add-small-margin-bottom {
+    .padding-three {
+      padding: 50px 0 36.5px 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .padding-three {
+      padding: 50px 0 36.5px 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .padding-three {
+      padding: 60px 0 46.5px 0; } }
+
+.padding-four {
+  padding: 100px 0 145px 0; }
+  @media (max-width: 767px) {
+    .padding-four {
+      padding: 50px 0 72.5px 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .padding-four {
+      padding: 50px 0 72.5px 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .padding-four {
+      padding: 60px 0 82.5px 0; } }
+
+.margin-one {
+  margin-bottom: 122.5px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .margin-one {
+      margin-bottom: 50px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .margin-one {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .margin-one {
       margin-bottom: 40px; } }
 
-.add-medium-margin-top {
-  margin-top: -163px; }
+.margin-two {
+  margin: -163px 0 122.5px 0; }
+  @media (max-width: 767px) {
+    .margin-two {
+      margin: -81.5px 0 61.5px 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .margin-two {
+      margin: -81.5px 0 61.5px 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .margin-two {
+      margin: -91.5px 0 71.5px 0; } }
+
+.margin-three {
+  margin: 72.5px 0; }
+  @media (max-width: 767px) {
+    .margin-three {
+      margin: 40px 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .margin-three {
+      margin: 36.5px 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .margin-three {
+      margin: 46.5px 0; } }
+
+@media (max-width: 767px) {
+  .remove-bottom-padding {
+    padding-bottom: 0; } }
 
 @font-face {
   font-family: 'Roboto';
@@ -1443,10 +1498,10 @@ body {
         line-height: 28px;
         text-align: center; } }
 
-.cases-template-container {
+.bg-gray {
   position: relative;
   overflow: hidden; }
-  .cases-template-container:after {
+  .bg-gray:after {
     content: "";
     background: #EAEAEA;
     position: absolute;
@@ -1456,14 +1511,14 @@ body {
     width: 100%;
     z-index: -9; }
     @media (min-width: 768px) and (max-width: 991px) {
-      .cases-template-container:after {
+      .bg-gray:after {
         height: 660px;
         top: 154px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
-      .cases-template-container:after {
+      .bg-gray:after {
         height: 930px; } }
     @media (max-width: 767px) {
-      .cases-template-container:after {
+      .bg-gray:after {
         display: none; } }
 
 .cases-template-item {
@@ -2951,6 +3006,8 @@ footer {
     @media (min-width: 992px) and (max-width: 1199px) {
       .case-steps-item:nth-child(even) .case-steps-content {
         padding-right: 70px; } }
+  .case-steps-item:last-child {
+    margin: 0; }
 
 .quote-container {
   margin-bottom: 200px;
