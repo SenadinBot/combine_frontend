@@ -456,6 +456,52 @@ p {
   .remove-bottom-padding {
     padding-bottom: 0; } }
 
+.bg {
+  position: relative; }
+  .bg:after {
+    content: "";
+    background: #EAEAEA;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -9; }
+  .bg.bg-offset-top-right.full-bg {
+    top: -20%;
+    right: 0; }
+  .bg.bg-offset-top-right:after {
+    top: -20%;
+    right: calc(100% - 80%); }
+  .bg.bg-offset-middle-right.full-bg:after {
+    top: 0;
+    right: 0; }
+  .bg.bg-offset-middle-right:after {
+    top: 0;
+    right: calc(100% - 80%); }
+  .bg.bg-offset-bottom-right.full-bg:after {
+    top: 20%;
+    right: 0; }
+  .bg.bg-offset-bottom-right:after {
+    top: 20%;
+    right: calc(100% - 80%); }
+  .bg.bg-offset-top-left.full-bg:after {
+    top: -20%;
+    left: 0; }
+  .bg.bg-offset-top-left:after {
+    top: -20%;
+    left: calc(100% - 80%); }
+  .bg.bg-offset-middle-left.full-bg:after {
+    top: 0;
+    left: 0; }
+  .bg.bg-offset-middle-left:after {
+    top: 0;
+    left: calc(100% - 80%); }
+  .bg.bg-offset-bottom-left.full-bg:after {
+    top: 20%;
+    left: 0; }
+  .bg.bg-offset-bottom-left:after {
+    top: 20%;
+    left: calc(100% - 80%); }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto-regular/Roboto-Regular.eot");
@@ -1750,14 +1796,14 @@ body {
       margin-bottom: 70px; } }
 
 .brand-inner-container {
-  background: #EAEAEA;
   padding: 135px 0 110px 110px;
   position: relative;
   margin-right: -100%;
   padding-right: 100%;
   border: 1px solid #979797;
   border-right: none;
-  position: relative; }
+  position: relative;
+  z-index: 0; }
   @media (min-width: 768px) and (max-width: 991px) {
     .brand-inner-container {
       padding: 115px 100% 90px 80px; } }
@@ -1767,28 +1813,6 @@ body {
       margin-left: -15px;
       margin-right: -15px;
       border: none; } }
-  .brand-inner-container:after {
-    content: "";
-    background: #979797;
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    right: -100%;
-    top: -1px; }
-    @media (max-width: 767px) {
-      .brand-inner-container:after {
-        display: none; } }
-  .brand-inner-container:before {
-    content: "";
-    background: #979797;
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    right: -100%;
-    bottom: -1px; }
-    @media (max-width: 767px) {
-      .brand-inner-container:before {
-        display: none; } }
   .brand-inner-container h1 {
     font-size: 48px;
     line-height: 54px;
@@ -1918,7 +1942,6 @@ body {
       margin-bottom: 80px; } }
 
 .brand-intro-inner-container {
-  background: #EAEAEA;
   padding: 390px 0 198px 110px;
   position: relative;
   margin-left: -100%;

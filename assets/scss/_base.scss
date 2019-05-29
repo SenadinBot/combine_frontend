@@ -499,3 +499,84 @@ p {
         padding-bottom: 0;
     }
 }
+.bg {
+    position: relative;
+    &:after {
+        content: "";
+        background: $gallery;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -9;
+    }
+    &.bg-offset-top-right {
+        &.full-bg {
+            top: -20%;
+            right: 0;
+        }
+        &:after {
+            top: -20%;
+            right: calc(100% - 80%);
+        }
+    }
+    &.bg-offset-middle-right {
+        &.full-bg {
+            &:after {
+                top: 0;
+                right: 0;
+            } 
+        }
+        &:after {
+            top: 0;
+            right: calc(100% - 80%);
+        }
+    }
+    &.bg-offset-bottom-right {
+        &.full-bg {
+            &:after {
+                top: 20%;
+                right: 0;
+            } 
+        }
+        &:after {
+            top: 20%;
+            right: calc(100% - 80%);
+        }
+    }
+    &.bg-offset-top-left {
+        &.full-bg {
+            &:after {
+                top: -20%;
+                left: 0;
+            }
+        }
+        &:after {
+            top: -20%;
+            left: calc(100% - 80%);
+        }
+    }
+    &.bg-offset-middle-left {
+        &.full-bg {
+            &:after {
+                top: 0;
+                left: 0;            
+            } 
+        }
+        &:after {
+            top: 0;
+            left: calc(100% - 80%);            
+        }
+    }
+    &.bg-offset-bottom-left {
+        &.full-bg {
+            &:after {
+                top: 20%;
+                left: 0;            
+            }
+        }
+        &:after {
+            top: 20%;
+            left: calc(100% - 80%);            
+        }
+    }
+}
